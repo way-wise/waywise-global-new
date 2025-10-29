@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useRef, useState } from "react";
+import { useOnClickOutside } from "usehooks-ts";
 
 const navigationLinks = [
   { href: "/" as const, label: "Home" },
@@ -13,6 +14,13 @@ const navigationLinks = [
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const mobileMenuRef = useRef<HTMLDivElement>(null);
+
+  useOnClickOutside(mobileMenuRef as React.RefObject<HTMLElement>, () => {
+    if (isMobileMenuOpen) {
+      setIsMobileMenuOpen(false);
+    }
+  });
 
   return (
     <header className="sticky top-0 left-0 z-40 w-full bg-gray-300/60 backdrop-blur-lg transition">
@@ -55,7 +63,7 @@ const Navbar = () => {
 
               {/* Mobile Menu Button */}
               <button
-                className="xl:hidden"
+                className="lg:hidden"
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 aria-label="Toggle mobile menu"
               >
@@ -68,9 +76,15 @@ const Navbar = () => {
         </div>
       </div>
 
+      {/* Mobile Menu Backdrop */}
+      {isMobileMenuOpen && (
+        <div className="fixed inset-0 z-40 bg-black/30 backdrop-blur-sm lg:hidden" />
+      )}
+
       {/* Mobile Menu */}
       <div
-        className={`absolute end-0 top-0 z-50 block h-screen w-full max-w-[320px] transform bg-black/50 px-4 py-10 text-white backdrop-blur transition-all duration-500 xl:hidden ${
+        ref={mobileMenuRef}
+        className={`fixed top-0 right-0 z-50 h-screen w-full max-w-[320px] transform bg-gray-800/95 px-4 py-10 text-white backdrop-blur transition-all duration-500 lg:hidden ${
           isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
