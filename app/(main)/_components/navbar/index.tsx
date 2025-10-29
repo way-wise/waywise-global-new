@@ -23,7 +23,7 @@ const Navbar = () => {
   });
 
   return (
-    <header className="sticky top-0 left-0 z-40 w-full bg-gray-300/60 backdrop-blur-lg transition">
+    <header className="fixed top-0 left-0 z-40 w-full bg-gray-300/60 backdrop-blur-lg transition">
       <div className="py-5">
         <div className="container">
           <div className="relative -mx-4 flex items-center justify-between">

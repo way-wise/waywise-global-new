@@ -3,7 +3,7 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <div
-      className="text-dark relative flex items-center justify-center"
+      className="text-dark relative flex items-center justify-center pt-52 pb-8"
       data-theme="dark"
     >
       <div className="relative z-10 container mb-8 flex flex-col items-center gap-5 lg:flex-row xl:flex-col">
