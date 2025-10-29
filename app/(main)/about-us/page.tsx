@@ -1,50 +1,7 @@
 import Image from "next/image";
 
-const ServicesPage = () => {
-  const services = [
-    {
-      id: 1,
-      title: "Information Technology (IT)",
-      description:
-        "From cutting-edge software development to robust IT support, we provide innovative solutions to drive your business forward. Let us help you stay ahead in the digital era.",
-      image: "/images/service-01.webp",
-    },
-    {
-      id: 2,
-      title: "Air Ticketing",
-      description:
-        "Whether it’s for business or leisure, we simplify your travel with hassle-free air ticketing services. Enjoy competitive pricing and seamless booking for a smooth journey.",
-      image: "/images/service-02.png",
-    },
-    {
-      id: 3,
-      title: "Export-Import",
-      description:
-        "Facilitating global trade, we connect markets with efficient and reliable export-import services. Trust us to handle your logistics with professionalism and care.",
-      image: "/images/service-03.png",
-    },
-    {
-      id: 4,
-      title: "Overseas Jobs",
-      description:
-        "Empowering talent to explore global opportunities, we specialize in international job placements. Your dream career abroad is just a step away with our trusted recruitment services.",
-      image: "/images/service-04.png",
-    },
-    {
-      id: 5,
-      title: "Construction",
-      description:
-        "From concept to completion, we deliver high-quality construction projects tailored to your vision. Our expertise ensures durability, innovation, and aesthetic appeal.",
-      image: "/images/service-05.png",
-    },
-    {
-      id: 6,
-      title: "Hajj and Umrah Services",
-      description:
-        "Experience a spiritually enriching journey with our comprehensive Hajj and Umrah packages. We handle every detail, so you can focus on your pilgrimage.",
-      image: "/images/service-06.webp",
-    },
-  ];
+const AboutUsPage = () => {
+
   return (
     <>
       <section className="relative h-[300px] md:h-[400px] lg:h-[650px] pt-52">
@@ -121,4 +78,4 @@ const ServicesPage = () => {
   );
 };
 
-export default ServicesPage;
+export default AboutUsPage;
