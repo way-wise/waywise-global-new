@@ -4,7 +4,6 @@ import "./globals.css";
 
 import { Toaster } from "@/components/ui/sonner";
 import { ProgressProvider } from "@/providers/progress-provider";
-import { ThemeProvider } from "@/providers/theme-provider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -24,12 +23,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.className} antialiased`}>
-        <ThemeProvider attribute="class" enableSystem disableTransitionOnChange>
-          <ProgressProvider>
-            {children}
-            <Toaster />
-          </ProgressProvider>
-        </ThemeProvider>
+        <ProgressProvider>
+          {children}
+          <Toaster />
+        </ProgressProvider>
       </body>
     </html>
   );
