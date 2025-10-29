@@ -32,7 +32,7 @@ const Navbar = () => {
               <Link href="/" className="header-logo">
                 <div className="h-auto w-44 sm:w-52 md:w-56 lg:max-w-60 dark:brightness-200">
                   <Image
-                    src="/api/media/file/wwg_logo_horizontal.png"
+                    src="/images/wwg_logo_horizontal.webp"
                     alt="wwg_logo"
                     width={423}
                     height={100}
