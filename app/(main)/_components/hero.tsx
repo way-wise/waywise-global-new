@@ -19,33 +19,62 @@ const Hero = () => {
         {/* Cards Container */}
         <div className="flex w-full flex-col items-center justify-center gap-8">
           {/* First Row - Only WayWise Tech */}
-          <div className="flex w-full flex-col items-center justify-center gap-5 md:flex-row xl:w-[85%]">
-            {/* WayWise Tech - Middle Elevated */}
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group flex aspect-[4/3] h-auto w-full translate-y-0 flex-col items-center justify-center gap-2 rounded-xl bg-slate-100/50 p-5 backdrop-blur hover:bg-slate-50/60 xl:h-52 xl:w-96 xl:-translate-y-8"
-              href="https://www.waywisetech.com/"
-            >
-              <div>
-                <Image
-                  alt="wwt_logo"
-                  width={300}
-                  height={209}
-                  src="/images/wwt_logo_v2.webp"
-                  className="w-36 object-contain transition group-hover:scale-110"
-                />
-              </div>
-              <div className="prose dark:prose-invert mx-auto max-w-none text-center text-xs leading-tight font-semibold text-black xl:text-xl">
-                <p className="col-start-2">Complete IT & Software Solutions</p>
-              </div>
-            </a>
+          <div className="flex w-full flex-col items-center justify-around gap-5 md:flex-row xl:w-[75%]">
+            <div className="flex w-full flex-col items-center justify-center gap-5 md:flex-row xl:w-[85%]">
+              {/* WayWise Tech - Middle Elevated */}
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex aspect-[4/3] h-auto w-full translate-y-0 flex-col items-center justify-center gap-2 rounded-xl bg-slate-100/50 p-5 backdrop-blur hover:bg-slate-50/60 xl:h-52 xl:w-72 xl:-translate-y-8"
+                href="https://www.waywisetech.com/"
+              >
+                <div>
+                  <Image
+                    alt="wwt_logo"
+                    width={300}
+                    height={209}
+                    src="/images/WWTrading.png"
+                    className="w-36 object-contain transition group-hover:scale-110"
+                  />
+                </div>
+                <div className="prose dark:prose-invert mx-auto max-w-none text-center text-xs leading-tight font-semibold text-black xl:text-xl">
+                  <p className="col-start-2">
+                    One Stop Solutions for all your Export-Import Need
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div className="flex w-full flex-col items-center justify-center gap-5 md:flex-row xl:w-[85%]">
+              {/* WayWise Tech - Middle Elevated */}
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex aspect-[4/3] h-auto w-full translate-y-0 flex-col items-center justify-center gap-2 rounded-xl bg-slate-100/50 p-5 backdrop-blur hover:bg-slate-50/60 xl:h-52 xl:w-72 xl:-translate-y-8"
+                href="https://www.waywisetech.com/"
+              >
+                <div>
+                  <Image
+                    alt="wwt_logo"
+                    width={300}
+                    height={209}
+                    src="/images/wwt_logo_v2.webp"
+                    className="w-36 object-contain transition group-hover:scale-110"
+                  />
+                </div>
+                <div className="prose dark:prose-invert mx-auto max-w-none text-center text-xs leading-tight font-semibold text-black xl:text-xl">
+                  <p className="col-start-2">
+                    Complete IT & Software Solutions
+                  </p>
+                </div>
+              </a>
+            </div>
           </div>
 
           {/* Second Row */}
           <div className="flex w-full flex-col items-center justify-between gap-5 md:flex-row">
             {/* WayWise Builders */}
-            <div className="flex w-full xl:-mt-[80px] xl:w-auto">
+            <div className="flex w-full xl:w-auto">
               <a
                 target="_blank"
                 rel="noopener noreferrer"
@@ -79,7 +108,7 @@ const Hero = () => {
             </div>
 
             {/* WayWise Jobs */}
-            <div className="flex w-full xl:-mt-[80px] xl:w-auto">
+            <div className="flex w-full xl:w-auto">
               <a
                 target="_blank"
                 rel="noopener noreferrer"
