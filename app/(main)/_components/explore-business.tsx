@@ -88,7 +88,7 @@ const ExploreBusiness = () => {
                 className="object-cover transition-transform duration-500 group-hover:scale-110"
               />
               Dark Overlay
-              <div className="absolute inset-0 bg-black/20 transition-opacity duration-300 group-hover:bg-black/60"></div>
+              <div className="absolute inset-0 bg-black/20 transition-opacity duration-300 group-hover:bg-black/40"></div>
               {/* Content Overlay */}
               <div className="absolute inset-0 flex flex-col justify-between p-6">
                 {/* Title */}

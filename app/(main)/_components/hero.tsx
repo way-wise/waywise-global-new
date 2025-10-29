@@ -86,7 +86,7 @@ const Hero = () => {
                     alt="wwc-logo"
                     width={512}
                     height={110}
-                    src="/images/wwc-logo.webp"
+                    src="/images/WWC-logo.webp"
                     className="w-48 object-contain transition group-hover:scale-110"
                   />
                 </div>
