@@ -93,7 +93,7 @@ const ExploreBusiness = () => {
               <div className="absolute inset-0 flex flex-col justify-between p-6">
                 {/* Title */}
                 <div>
-                  <h3 className="mb-4 text-2xl font-bold text-white drop-shadow-lg">
+                  <h3 className="mb-4 text-4xl font-bold text-white drop-shadow-lg">
                     {card.title}
                   </h3>
                 </div>
