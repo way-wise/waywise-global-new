@@ -3,8 +3,8 @@ import Link from "next/link";
 
 const CTA = () => {
   return (
-    <section className="py-24">
-      <div className="relative container  p-12 min-h-80 md:min-h-80 rounded-xl overflow-hidden">
+    <section className="py-24 mx-4">
+      <div className="relative container p-12 min-h-96 md:min-h-96 rounded-xl overflow-hidden">
         <div>
           <Image
             src="/images/cta.jpg"

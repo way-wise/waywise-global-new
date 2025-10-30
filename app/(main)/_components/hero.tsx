@@ -3,14 +3,14 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <div
-      className="text-dark relative flex items-center justify-center pt-52 pb-8"
+      className="text-dark relative flex items-center justify-center pt-40 md:pt-52 pb-8"
       data-theme="dark"
     >
       <div className="relative z-10 container mb-8 flex flex-col items-center gap-5 lg:flex-row xl:flex-col">
         {/* Header - Hidden on XL screens */}
         <div className="flex w-full max-w-[36.5rem] flex-grow text-center xl:hidden">
           <div className="prose dark:prose-invert mx-auto mb-6 max-w-none">
-            <div className="text-center text-[52px] font-bold text-[#a5a5fd]">
+            <div className="text-center text-3xl md:text-[52px] font-bold text-[#a5a5fd]">
               OUR WAYS TO REACH YOUR DESTINATION WISELY
             </div>
           </div>

@@ -52,7 +52,7 @@ const Navbar = () => {
                     <li key={link.href} className="group relative text-white">
                       <Link
                         href={{ pathname: link.href }}
-                        className="block rounded py-2 text-base font-medium whitespace-nowrap text-white no-underline ring-offset-background transition-colors hover:text-primary hover:underline focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 lg:mr-0 lg:px-0 lg:py-6"
+                        className="block rounded py-2 text-base md:text-xl font-medium whitespace-nowrap text-black no-underline ring-offset-background transition-colors hover:text-primary hover:underline focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 lg:mr-0 lg:px-0 lg:py-6"
                       >
                         {link.label}
                       </Link>

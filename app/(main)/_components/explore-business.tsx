@@ -60,14 +60,14 @@ const businessCards = [
 
 const ExploreBusiness = () => {
   return (
-    <section className="bg-gray-50 py-16 md:py-20 lg:py-24 dark:bg-gray-900">
+    <section className="bg-gray-50 py-8 sm:py-16 md:py-20 lg:py-24 dark:bg-gray-900">
       <div className="mx-auto px-8">
         {/* Section Header */}
         <div className="mb-12 text-center">
-          <h2 className="mb-4 text-3xl font-bold text-gray-900 md:text-4xl lg:text-5xl dark:text-white">
+          <h2 className="mb-4 text-2xl sm:text-3xl font-bold text-gray-900 md:text-4xl lg:text-5xl dark:text-white">
             Explore our Businesses
           </h2>
-          <p className="mx-auto max-w-2xl text-lg text-gray-600 dark:text-gray-300">
+          <p className="mx-auto max-w-2xl text-base md:text-lg text-gray-600 dark:text-gray-300">
             Discover our diverse portfolio of companies, each specializing in
             different industries and providing exceptional services worldwide.
           </p>
@@ -93,14 +93,14 @@ const ExploreBusiness = () => {
               <div className="absolute inset-0 flex flex-col justify-between p-6">
                 {/* Title */}
                 <div>
-                  <h3 className="mb-4 text-4xl font-bold text-white drop-shadow-lg">
+                  <h3 className="mb-4 text-2xl sm:text-3xl md:text-4xl font-bold text-white drop-shadow-lg">
                     {card.title}
                   </h3>
                 </div>
 
                 {/* Description and Button */}
                 <div>
-                  <p className="mb-6 text-xl leading-relaxed text-white/90 drop-shadow-md">
+                  <p className="mb-6 text-sm md:text-xl leading-relaxed text-white/90 drop-shadow-md">
                     {card.description}
                   </p>
 

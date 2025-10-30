@@ -53,14 +53,14 @@ const ServicesPage = () => {
             className="absolute top-0 left-0 h-full w-full object-cover"
           />
           <div className="absolute top-0 left-0 flex h-full w-full items-center justify-center bg-black/30">
-            <h1 className="text-6xl font-bold text-white">Services</h1>
+            <h1 className="text-3xl md:text-6xl font-bold text-white">Services</h1>
           </div>
         </div>
       </section>
       <section>
         <div className="container py-16">
-          <h2 className="text-6xl text-center mb-10">Services We Provide</h2>
-          <p className="text-lg text-gray-900 text-center mb-12 max-w-4xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-6xl text-center mb-6 lg:mb-10">Services We Provide</h2>
+          <p className="text-sm md:text-lg text-gray-900 text-center mb-12 max-w-4xl mx-auto">
             At Way-Wise Global, we pride ourselves on delivering a diverse range
             of services tailored to meet your needs. Our expertise spans across
             industries, ensuring you get the best solutions, every time.
@@ -68,10 +68,10 @@ const ServicesPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
             {
                 services.map((service) => (
-                    <div key={service.id} className="flex flex-col gap-8">
-                        <Image src={service.image} alt={service.title} width={128} height={128} className="size-[128px] object-cover" />
-                        <h3 className="text-2xl font-bold">{service.title}</h3>
-                        <p>{service.description}</p>
+                    <div key={service.id} className="flex flex-col gap-4 md:gap-8">
+                        <Image src={service.image} alt={service.title} width={128} height={128} className="size-20 md:size-[128px] object-cover" />
+                        <h3 className="text-xl md:text-2xl font-bold">{service.title}</h3>
+                        <p className="text-sm md:text-lg text-gray-900">{service.description}</p>
                     </div>
                 ))
             }

@@ -2,11 +2,11 @@ import Image from "next/image";
 
 const Feature = () => {
   return (
-    <section className="py-24">
+    <section className="py-12 lg:py-24">
       <div className="container space-y-24">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
           <div>
-            <h2 className="mb-6 text-4xl font-bold">
+            <h2 className="mb-6 text-2xl sm:text-3xl md:text-4xl font-bold">
               Trusted experts in business matters
             </h2>
             <div className="gap-6 text-lg text-gray-900">
@@ -33,7 +33,7 @@ const Feature = () => {
             className="h-full w-full object-cover"
           />
         </div>
-        <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
+        <div className="grid grid-cols-1 items-center gap-6 md:gap-12 lg:grid-cols-2">
           <Image
             src="/images/home-feature-2.jpg"
             alt="About Us"
@@ -43,7 +43,7 @@ const Feature = () => {
           />
           <div>
             <p>Unlock Your Potential</p>
-            <h2 className="mb-6 text-4xl font-bold">
+            <h2 className="mb-6 text-2xl sm:text-3xl md:text-4xl font-bold">
               Strategic Business Insights
             </h2>
             <div className="gap-6 text-lg text-gray-900">
