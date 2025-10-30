@@ -3,7 +3,7 @@ import Image from "next/image";
 const AboutUsPage = () => {
   return (
     <>
-      <section className="relative h-[300px] pt-52 md:h-[400px] lg:h-[650px]">
+      <section className="relative h-[300px] pt-52 md:h-[400px] lg:h-[750px]">
         <div>
           <Image
             src="/images/contact-hero.webp"
@@ -13,15 +13,15 @@ const AboutUsPage = () => {
             className="absolute top-0 left-0 h-full w-full object-cover"
           />
           <div className="absolute top-0 left-0 flex h-full w-full items-center justify-center bg-black/30">
-            <h1 className="text-6xl font-bold text-white">Contact Us</h1>
+            <h1 className="text-3xl md:text-6xl font-bold text-white">Contact Us</h1>
           </div>
         </div>
       </section>
-      <section className="py-24">
+      <section className="py-12 lg:py-24">
         <div className="container space-y-24">
-          <h2 className="text-6xl text-center mb-12">Get in Touch With Us</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-6xl text-center mb-6 lg:mb-12">Get in Touch With Us</h2>
           <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
-            <div className="flex flex-col gap-6 text-lg text-gray-900">
+            <div className="flex flex-col gap-6 text-sm md:text-lg text-gray-900">
               <p>
                 We’re here to assist you! Whether you have a question, need
                 support, or want to explore opportunities to collaborate, our

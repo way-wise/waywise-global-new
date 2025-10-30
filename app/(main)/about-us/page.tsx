@@ -1,4 +1,5 @@
 import Image from "next/image";
+import CTA from "../_components/home/cta";
 
 const AboutUsPage = () => {
 
@@ -74,6 +75,7 @@ const AboutUsPage = () => {
             </div>
         </div>
       </section>
+      <CTA />
     </>
   );
 };

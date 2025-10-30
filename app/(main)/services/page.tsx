@@ -1,4 +1,5 @@
 import Image from "next/image";
+import CTA from "../_components/home/cta";
 
 const ServicesPage = () => {
 
@@ -42,7 +43,7 @@ const ServicesPage = () => {
     ]
   return (
     <>
-      <section className="relative h-[300px] md:h-[400px] lg:h-[650px]">
+      <section className="relative h-[300px] md:h-[400px] lg:h-[750px] pt-52">
         <div>
           <Image
             src="/images/service_hero.jpg"
@@ -77,6 +78,7 @@ const ServicesPage = () => {
           </div>
         </div>
       </section>
+      <CTA />
     </>
   );
 };
