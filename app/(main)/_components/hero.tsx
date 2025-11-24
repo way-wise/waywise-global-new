@@ -138,7 +138,7 @@ const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="group flex aspect-[4/3] h-auto w-full flex-col items-center justify-center gap-2 rounded-xl bg-slate-100/50 p-5 backdrop-blur hover:bg-slate-50/60 xl:h-52 xl:w-72"
-              href="#"
+              href="https://designersdream.live"
             >
               <div>
                 <Image
