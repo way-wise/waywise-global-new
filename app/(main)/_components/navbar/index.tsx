@@ -47,7 +47,7 @@ const Navbar = () => {
             <div className="flex w-full items-center justify-end gap-6 px-4">
               {/* Desktop Navigation */}
               <nav className="hidden lg:block">
-                <ul className="flex space-x-8">
+                <ul className="flex items-center space-x-8">
                   {navigationLinks.map((link) => (
                     <li key={link.href} className="group relative text-white">
                       <Link
@@ -58,6 +58,15 @@ const Navbar = () => {
                       </Link>
                     </li>
                   ))}
+                  <li>
+                    <Link
+                      href="https://loss-profit-software.onrender.com"
+                      target="_blank"
+                      className="bg-[#C1252D] text-white block rounded-md py-2 text-base md:text-xl font-medium whitespace-nowrap no-underline ring-offset-background transition-colors hover:text-black hover:underline focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 lg:mr-0 lg:px-4 lg:py-1.5"
+                    >
+                      PnL
+                    </Link>
+                  </li>
                 </ul>
               </nav>
 
@@ -130,6 +139,16 @@ const Navbar = () => {
                 </Link>
               </li>
             ))}
+            <li>
+              <Link
+                href="https://designersdream.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block rounded px-3 py-2 text-base font-medium whitespace-nowrap text-primary no-underline ring-offset-background transition-colors hover:underline focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50"
+              >
+                Designers Dream
+              </Link>
+            </li>
           </ul>
         </nav>
       </div>
