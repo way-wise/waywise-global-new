@@ -60,11 +60,11 @@ const Navbar = () => {
                   ))}
                   <li>
                     <Link
-                      href="https://loss-profit-software.onrender.com"
+                      href="https://expense.waywisetech.com/"
                       target="_blank"
                       className="bg-[#C1252D] text-white block rounded-md py-2 text-base md:text-xl font-medium whitespace-nowrap no-underline ring-offset-background transition-colors hover:text-black hover:underline focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 lg:mr-0 lg:px-4 lg:py-1.5"
                     >
-                      PnL
+                      P&L
                     </Link>
                   </li>
                 </ul>
