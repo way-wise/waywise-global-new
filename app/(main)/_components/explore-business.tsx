@@ -12,6 +12,15 @@ const businessCards = [
     buttonText: "Learn more",
   },
   {
+    id: 5,
+    title: "Way-Wise Jobs",
+    description:
+      "Choose your Career. Connecting talented professionals with exciting career opportunities across various industries and helping businesses find the right talent.",
+    backgroundImage: "/images/way-wise-jobs.webp",
+    href: "https://www.waywisejobs.com/",
+    buttonText: "Learn more",
+  },
+  {
     id: 2,
     title: "Way-Wise Trading",
     description:
@@ -27,15 +36,6 @@ const businessCards = [
       "Your Household & Residential Solutions. Professional construction and renovation services providing comprehensive building solutions for residential and commercial projects.",
     backgroundImage: "/images/way-wise-constructions-1.webp",
     href: "https://www.waywisebuilders.com/",
-    buttonText: "Learn more",
-  },
-  {
-    id: 5,
-    title: "Way-Wise Jobs",
-    description:
-      "Choose your Career. Connecting talented professionals with exciting career opportunities across various industries and helping businesses find the right talent.",
-    backgroundImage: "/images/way-wise-jobs.webp",
-    href: "https://www.waywisejobs.com/",
     buttonText: "Learn more",
   },
   {
@@ -64,9 +64,9 @@ const ExploreBusiness = () => {
           </p>
         </div>
 
-        {/* Cards Grid */}
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {businessCards.slice(0, 3).map((card) => (
+        {/* Second row of grid */}
+        <div className="grid gap-8 md:grid-cols-1 lg:grid-cols-2">
+          {businessCards.slice(0, 2).map((card) => (
             <div
               key={card.id}
               className="group relative h-80 overflow-hidden rounded-2xl shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
@@ -123,9 +123,9 @@ const ExploreBusiness = () => {
           ))}
         </div>
 
-        {/* Second row of grid */}
-        <div className="mt-8 grid gap-8 md:grid-cols-1 lg:grid-cols-2">
-          {businessCards.slice(3, 5).map((card) => (
+        {/* Cards Grid */}
+        <div className="mt-8 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {businessCards.slice(2, 5).map((card) => (
             <div
               key={card.id}
               className="group relative h-80 overflow-hidden rounded-2xl shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"

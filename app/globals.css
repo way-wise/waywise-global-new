@@ -78,8 +78,14 @@
   --color-input: var(--input);
   --color-ring: var(--ring);
 
+  --animate-pulse-scale: pulse-scale 2s ease-in-out infinite;
   --animate-collapsible-expand: collapsible-expand 0.2s ease-out;
   --animate-collapsible-collapse: collapsible-collapse 0.2s ease-out;
+
+  @keyframes pulse-scale {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+  }
 
   @keyframes collapsible-expand {
     from {
@@ -107,6 +113,15 @@
     @apply bg-background text-foreground;
   }
 }
+@keyframes pulse-scale {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+}
+
+.animate-pulse-scale {
+  animation: pulse-scale 2s ease-in-out infinite;
+}
+
 .container {
   @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
 }
