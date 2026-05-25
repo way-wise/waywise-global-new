@@ -61,7 +61,8 @@ const ExploreModal = ({ onClose }: ExploreModalProps) => {
 
   useEffect(() => {
     // Compensate for scrollbar width to prevent layout shift/blink
-    const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+    const scrollbarWidth =
+      window.innerWidth - document.documentElement.clientWidth;
     document.body.style.overflow = "hidden";
     document.body.style.paddingRight = `${scrollbarWidth}px`;
 
@@ -85,7 +86,9 @@ const ExploreModal = ({ onClose }: ExploreModalProps) => {
   return (
     <div
       className={`fixed inset-0 z-50 flex items-center justify-center p-4 transition-all duration-250 ${
-        visible ? "bg-black/60 backdrop-blur-sm" : "bg-black/0 backdrop-blur-none"
+        visible
+          ? "bg-black/60 backdrop-blur-sm"
+          : "bg-black/0 backdrop-blur-none"
       }`}
       onClick={handleClose}
     >
@@ -98,16 +101,29 @@ const ExploreModal = ({ onClose }: ExploreModalProps) => {
         {/* Header */}
         <div className="flex shrink-0 items-center justify-between border-b border-gray-100 px-6 py-4">
           <div>
-            <h2 className="text-2xl font-bold text-gray-900">Explore Our Businesses</h2>
-            <p className="text-sm text-gray-500">Discover our diverse portfolio of companies</p>
+            <h2 className="text-2xl font-bold text-gray-900">
+              Explore Our Businesses
+            </h2>
+            <p className="text-sm text-gray-500">
+              Discover our diverse portfolio of companies
+            </p>
           </div>
           <button
             onClick={handleClose}
-            className="flex size-9 items-center justify-center rounded-full bg-gray-100 text-gray-500 transition hover:bg-gray-200 hover:text-gray-900"
+            className="flex size-9 cursor-pointer items-center justify-center rounded-full bg-gray-100 text-gray-500 transition hover:bg-gray-200 hover:text-gray-900"
             aria-label="Close"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-5">
-              <path fillRule="evenodd" d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z" clipRule="evenodd" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="size-5"
+            >
+              <path
+                fillRule="evenodd"
+                d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z"
+                clipRule="evenodd"
+              />
             </svg>
           </button>
         </div>
@@ -143,12 +159,11 @@ const BusinessCard = ({ card }: { card: Card }) => (
       className="object-cover transition-transform duration-500 group-hover:scale-110"
     />
     <div className="absolute inset-0 bg-black/30 transition-opacity duration-300 group-hover:bg-black/50" />
-    <div className="absolute inset-0 flex flex-col justify-between p-5">
-      <h3 className="text-xl font-bold text-white drop-shadow-lg">{card.title}</h3>
+    <div className="absolute inset-0 flex flex-col items-center justify-center p-5 text-center">
+      <h3 className="pb-6 text-4xl font-bold text-white drop-shadow-lg">
+        {card.title}
+      </h3>
       <div>
-        <p className="mb-4 text-sm leading-relaxed text-white/90 drop-shadow-md line-clamp-3">
-          {card.description}
-        </p>
         <Link
           href={card.href}
           target="_blank"
@@ -156,8 +171,18 @@ const BusinessCard = ({ card }: { card: Card }) => (
           className="inline-flex items-center rounded-lg border border-white/30 bg-white/20 px-4 py-2 text-sm font-medium text-white backdrop-blur-sm transition-all duration-200 hover:border-white/50 hover:bg-white/30"
         >
           {card.buttonText}
-          <svg className="ml-2 h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          <svg
+            className="ml-2 h-4 w-4 transition-transform duration-200 group-hover:translate-x-1"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M9 5l7 7-7 7"
+            />
           </svg>
         </Link>
       </div>
