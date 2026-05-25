@@ -23,8 +23,8 @@ const Navbar = () => {
   });
 
   return (
-    <header className="fixed top-0 left-0 z-40 w-full bg-gray-300/60 backdrop-blur-lg transition">
-      <div className="py-5">
+    <header className="fixed top-0 left-0 z-40 h-20 w-full bg-gray-300/60 backdrop-blur-lg transition">
+      <div>
         <div className="container">
           <div className="relative -mx-4 flex items-center justify-between">
             {/* Logo */}
@@ -153,7 +153,7 @@ const Navbar = () => {
               <Link
                 href="https://expense.waywisetech.com/"
                 target="_blank"
-                className="inline-block rounded-md bg-[#C1252D] py-1.5 px-4 text-base font-medium whitespace-nowrap text-white no-underline ring-offset-background transition-colors hover:text-black hover:underline focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 md:text-xl lg:mr-0 lg:px-4 lg:py-1.5"
+                className="inline-block rounded-md bg-[#C1252D] px-4 py-1.5 text-base font-medium whitespace-nowrap text-white no-underline ring-offset-background transition-colors hover:text-black hover:underline focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 md:text-xl lg:mr-0 lg:px-4 lg:py-1.5"
               >
                 P&L
               </Link>

@@ -1,12 +1,12 @@
 import ExploreBusiness from "./_components/explore-business";
-import Hero from "./_components/hero";
+import HeroV2 from "./_components/hero-v2";
 import CTA from "./_components/home/cta";
 import Feature from "./_components/home/feature";
 
 const HomePage = () => {
   return (
     <div>
-      <Hero />
+      <HeroV2 />
       <ExploreBusiness />
       <Feature />
       <CTA />
