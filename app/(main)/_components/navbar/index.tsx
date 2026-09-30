@@ -60,7 +60,7 @@ const Navbar = () => {
                   ))}
                   <li>
                     <Link
-                      href="https://expense.waywisetech.com/"
+                      href="https://pnl.waywisetech.com/"
                       target="_blank"
                       className="block rounded-md bg-[#C1252D] py-2 text-base font-medium whitespace-nowrap text-white no-underline ring-offset-background transition-colors hover:text-black hover:underline focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 md:text-xl lg:mr-0 lg:px-4 lg:py-1.5"
                     >
